@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {/*fonte tirada do google*/
+    font-family: "Bungee", sans-serif;/*família de fontes*/
+    font-weight: normal;/*peso de fonte*/
+}
+
+body,
+input,
+textarea {/*colocar fonte em todo body*/
+    font-family: "Roboto", sans-serif;/*família de fontes*/
+}
+
+
+/*p/ estilizar o cabeçalho*/
+header {
+    padding: 16px; /*espaçamento interno do cabeçalho e zero na laterais */
+    background-color: #182c61;/*cor de fundo*/
+    color: #ecf0f1;/*cor do texto do cabeçalho*/
+}
+
+/*p/ estilizar o menu*/
+header nav li{
+    display: inline;/*Propriedade dos menus*/
+    margin-left: 16px;/*margem entre os menus*/
+    font-size: 18px;/*aumentar as fontes dos itens dos menus*/
+  }
+header nav li a{
+        color: #ecf0f1;/*cor do menu*/
+        text-decoration: none ;/*p/ remover os haderline dos links*/
+}
+
+/*criar o container no header, serve para sentralizar o conteúdo e fazer a distribuição do logo do título para a esquerda e o menu na direita*/
+.container{
+    max-width: 1280px;/*Largura máxima*/
+    width: 100%;/*Largura 100% do 1280px*/
+    margin: 0 auto;/*para cetralizar a margin (alto/baixo) vai ser 0 e (laretais) vai ser auto*/
+}
+
+header .container,
+section .container {/*temos sempre que usar header que está dentro do container, colocando o título para a esquerda e o menu na direita e adicionando o seletor "section colocamos também o texto e a imagens em lados opostos*/
+    display: flex;/*colocar o título para a esquerda e o menu na direita*/
+    align-items: center;/*p/ centralizar na vertical*/
+    justify-content: space-between;/*colocar o título para a esquerda e o menu na extrema direita*/
+}
+
+.brands-list img {/*aqui fica a configuração da imagens desta classe*/
+    height: 24px;/*que a altura das imagens devem ter 24px*/
+}
+.brands-list li {/*colocando as imagens do "li" uma do lado da outra*/
+    display: inline;/*ultilizamos o comando "display:inline"*/
+    margin-right: 8px;/*colocar margem entre o texto e a logo*/
+}
+section .container {/*reescrevendo para ajustar a propriedade "align-items: center" para ajustar a regra*/
+    align-items: flex-start;
+}
+
+section{/*criar o espaçamento total da imagens e textos*/
+    padding: 24px 0; /*colocar 24px na parte inferior e superior e nas laterais vai ser "0"*/
+}
+
+section h2 {/*também no título vamos criar uma margem*/
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182c61;/*cor do título e do paragráfo*/
+}
+
+section p {/*alterando a margem da seção*/
+    margin-bottom: 8px;/*margem do fundo*/
+}
+
+.strore-front {/*dando espaçamento da imagens do texto, sem separa as logos*/
+    margin-right: 32px;/*margem a direita*/
+}
+
+.social-links img {/*configiração da imagens dos links das logos*/
+    height: 24px;/*altura*/
+}
+
+.social-links li{/*Ajustar os links das redes sociais para fica um do lado do outro*/
+    display: inline;
+    margin-right: 8px;/*margem a direita*/
+}
+
+.social-links li a {/*ajustar erro de pontos do lado das logos*/
+    text-decoration: none;/*decoração de texto: nenhum*/
+}
+
+#contact .container {
+    display: block;/*exibição em bloco*/
+}
+
+.contact-methods {
+    display: flex;/*exibição flexível*/
+    justify-content: space-between;/*colocar um esfaçamento entre...*/
+}
+
+form input,
+form textarea,
+form button {/*estilizar os formulários*/
+    display: block;/*exibição em bloco*/
+    width: 320px; /*largura*/
+    margin-bottom: 8px;/*margem do fundo*/
+    padding: 8px;/*preenchimento*/
+}
+
+form textarea {/*forma da área de texto*/
+    resize: none;/*redimensionar: nenhum*/
+    height: 180px;/*aumentado a altura*/
+}
+
+section h3{/*secão do h3*/
+    margin-bottom: 16px;/*magem de fundo*/
+}
+
+form button {/*customizar o formulário de cadastro*/
+    background-color: #182c61;/*cor de fundo*/
+    color: #ecf0f1;/*cor do texto*/
+    border: none;/*retirada de borda preta*/
+    cursor: pointer;/*quando passar o mouse no local a clicar vai aparecer a mãozinha do indicador*/ 
+}
+
+form button:hover {/*mudar a cor do botão quando o usuário passar o botão nele*/
+    background-color: #314e9e;
+}
+
+input:focus, 
+textarea:focus {
+    outline-color: #182c61;
+}
+
+footer {/*estilizando o rodapé*/
+    background-color: #182c61;/*cor de fundo*/
+    color: #ecf0f1;/*cor do texto*/
+    padding: 16px 0;/*espaçamento ao topo e a parte inferior/laterais da página*/
+}
