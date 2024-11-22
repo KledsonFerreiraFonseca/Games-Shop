@@ -31,7 +31,7 @@ header nav li{
     display: inline;/*Propriedade dos menus*/
     margin-left: 16px;/*margem entre os menus*/
     font-size: 18px;/*aumentar as fontes dos itens dos menus*/
-  }
+}
 header nav li a{
         color: #ecf0f1;/*cor do menu*/
         text-decoration: none ;/*p/ remover os haderline dos links*/
